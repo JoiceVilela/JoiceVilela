@@ -6,7 +6,7 @@
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 
-<!---import random
+import random
 
 def jogo_adivinhacao():
     print("Bem-vindo ao jogo de adivinhação!")
@@ -21,8 +21,12 @@ def jogo_adivinhacao():
             if palpite < numero_secreto:
                 print("Muito baixo! Tente novamente.")
             elif palpite > numero_secreto:
+                print("Muito alto! Tente novamente.")
+            else:
+                print(f"Parabéns! Você acertou o número secreto {numero_secreto} em {tentativas} tentativas.")
+                break
+        except ValueError:
+            print("Por favor, digite um número válido.")
 
-   
-JoiceVilela/JoiceVilela is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+# Inicia o jogo
+jogo_adivinhacao()
